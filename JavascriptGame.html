@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arkanoid</title>
+	<!--<meta name="viewport" content="width=device-width">-->
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<audio src="gun1.wav"></audio>
+
+<div id="wrapper">
+	<div id="tank"></div>
+	<div id="bullet"></div>
+	<div id="result"></div>
+	<div id="resultLevel"></div>
+	<div id="back"></div>
+	<p id="win" class="notification">ПЕРЕМОГА!</p>
+	<p id="start" class="notification">СТАРТ!</p>
+	<p id="next" class="notification">Наступний рівень!</p>
+	<p id="end" class="notification">Ви програли!</p>
+	<form action="">
+		<input type="radio" name="level" value="20" checked> Легкий<Br>
+		<input type="radio" name="level" value="50">Середній<Br>
+		<input type="radio" name="level" value="70" >Складний<Br>
+	</form>
+</div>
+
+<audio src="crash.wav"></audio>
+<script src="script/jquery-1.11.3.js"></script>
+<script src="script/myscript.js"></script>		
+</body>
+</html>
