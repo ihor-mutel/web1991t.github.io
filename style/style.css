@@ -1,0 +1,113 @@
+* {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none; 
+	 -webkit-user-select: none;
+    -ms-user-select: none;
+	margin:0; padding: 0;
+}/*
+body {
+	width:70%;
+	margin: 0
+}*/
+body, #wrapper {
+	height: 100%;
+}
+#tank {
+	width:32px;
+	height:32px;
+	background-image: url(../image/tank.png);
+	position:absolute;
+	bottom:0;
+	z-index:999;
+	display: none;
+}
+#resultLevel {
+	font-size: 20px;
+	font-weight:bold;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:99999;
+	color: white;
+}
+#wrapper{
+	width: 100%;
+	
+	position:relative;
+	overflow: hidden;
+	cursor: none;
+	/* margin:0 auto; */
+	-moz-user-select: none;
+	/* top:48px; */
+}
+#back {
+	background-image: url(../image/backgorunds/backLevel1.jpg);
+	width: 100%;
+	height: 10000px;
+	position:absolute;
+	z-index:-9999;
+}
+#bullet {
+	position:absolute;
+	width: 5px;
+	height:20px;
+	background-image:url(../image/bullet.jpg);
+	bottom:0;
+	left: -5px;
+}
+#result {
+	color: white;
+	position:absolute;
+	bottom:0;
+}
+.notification {
+	font-size:72px;
+	margin:0 auto;
+	position: absolute;
+	/*left:34%;*/
+	top: -500px;
+	font-weight:bold;
+	left:50%; margin-left:-25%;
+	width:50%;
+	text-align: center;
+	color:white;
+	background-color: rgba(0, 0, 255, 0.5);
+	box-shadow: 5px 4px 4px 5px black;	
+}
+.notification:hover {
+	background-color: rgba(0, 0, 255, 0.6);
+}
+.notification:active {
+	box-shadow: 5px 8px 8px 5px black;	
+	background-color: rgba(0, 0, 255, 0.9);
+}
+#start, #next  {
+	cursor:pointer;
+}
+/*#next {
+	left:10%;
+}*/
+.enemy {	
+	width:48px;
+	height:48px;
+	background-image: url(../image/enemy.gif);
+	position:absolute;
+	top:-48px;
+
+	border-radius: 40px;
+	
+	/* http://newsmir.info/img/100/1/4/38/37163.jpg */
+	/* http://computrachos.com/data/2013/03/asteroide.gif */
+}
+.hit {
+	background-image: url(../image/hit.gif)
+}
+form {
+	position: absolute;
+	right:0;
+	bottom:0;
+	color:white;
+	background-color: rgba(0, 0, 255, 0.41);
+	cursor: deafult;
+}
